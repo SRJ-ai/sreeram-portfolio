@@ -5,6 +5,7 @@ import { Points, PointMaterial } from '@react-three/drei';
 import * as THREE from 'three';
 import FadeIn from './FadeIn';
 import Magnet from './Magnet';
+import avatarImg from '../assets/avatar.png';
 
 /* ===== Inline Social Icons ===== */
 const GithubIcon = ({ size = 20 }) => (
@@ -180,42 +181,45 @@ const HeroSection = () => {
         textAlign: 'center',
         padding: '0 1.5rem'
       }}>
-        {/* 3D Avatar Portrait — centered behind text */}
-        <FadeIn delay={0.6} y={30}>
-          <Magnet padding={150} strength={3}>
-            <div style={{
-              position: 'absolute',
-              left: '50%',
-              top: '50%',
-              transform: 'translate(-50%, -50%)',
-              zIndex: 1,
-              pointerEvents: 'auto'
-            }}>
-              {/* Glow behind avatar */}
-              <div style={{
-                position: 'absolute',
-                inset: '-30%',
-                background: 'radial-gradient(circle, rgba(118, 33, 176, 0.25) 0%, rgba(182, 0, 168, 0.1) 40%, transparent 70%)',
-                borderRadius: '50%',
-                filter: 'blur(40px)',
-                pointerEvents: 'none'
-              }} />
-              <img
-                src="/avatar.png"
-                alt="Jagadeeshwar Sreeram — 3D Avatar"
-                style={{
-                  width: 'clamp(240px, 30vw, 440px)',
-                  height: 'auto',
-                  objectFit: 'contain',
-                  borderRadius: '20px',
-                  position: 'relative',
-                  zIndex: 1,
-                  filter: 'drop-shadow(0 0 40px rgba(118, 33, 176, 0.3))'
-                }}
-              />
-            </div>
-          </Magnet>
-        </FadeIn>
+
+        {/* 3D Avatar Portrait — absolutely centered behind text */}
+        <div style={{
+          position: 'absolute',
+          left: '50%',
+          top: '50%',
+          transform: 'translate(-50%, -50%)',
+          zIndex: 1,
+          pointerEvents: 'none'
+        }}>
+          <FadeIn delay={0.6} y={30}>
+            <Magnet padding={150} strength={3}>
+              <div style={{ pointerEvents: 'auto', position: 'relative' }}>
+                {/* Glow behind avatar */}
+                <div style={{
+                  position: 'absolute',
+                  inset: '-40%',
+                  background: 'radial-gradient(circle, rgba(118, 33, 176, 0.3) 0%, rgba(182, 0, 168, 0.12) 40%, transparent 70%)',
+                  borderRadius: '50%',
+                  filter: 'blur(50px)',
+                  pointerEvents: 'none'
+                }} />
+                <img
+                  src={avatarImg}
+                  alt="Jagadeeshwar Sreeram — 3D Avatar"
+                  style={{
+                    width: 'clamp(260px, 32vw, 480px)',
+                    height: 'auto',
+                    objectFit: 'contain',
+                    borderRadius: '24px',
+                    position: 'relative',
+                    zIndex: 1,
+                    filter: 'drop-shadow(0 0 60px rgba(118, 33, 176, 0.35))'
+                  }}
+                />
+              </div>
+            </Magnet>
+          </FadeIn>
+        </div>
 
         {/* Text over avatar */}
         <div style={{ position: 'relative', zIndex: 5 }}>
