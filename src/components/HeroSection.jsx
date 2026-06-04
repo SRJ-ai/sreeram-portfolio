@@ -5,7 +5,6 @@ import { Points, PointMaterial } from '@react-three/drei';
 import * as THREE from 'three';
 import FadeIn from './FadeIn';
 import Magnet from './Magnet';
-import avatarImg from '../assets/avatar.png';
 
 /* ===== Inline Social Icons ===== */
 const GithubIcon = ({ size = 20 }) => (
@@ -182,83 +181,41 @@ const HeroSection = () => {
         padding: '0 1.5rem'
       }}>
 
-        {/* 3D Avatar Portrait — absolutely centered behind text */}
-        <div style={{
-          position: 'absolute',
-          left: '50%',
-          top: '50%',
-          transform: 'translate(-50%, -50%)',
-          zIndex: 1,
-          pointerEvents: 'none'
-        }}>
-          <FadeIn delay={0.6} y={30}>
-            <Magnet padding={150} strength={3}>
-              <div style={{ pointerEvents: 'auto', position: 'relative' }}>
-                {/* Glow behind avatar */}
-                <div style={{
-                  position: 'absolute',
-                  inset: '-40%',
-                  background: 'radial-gradient(circle, rgba(118, 33, 176, 0.3) 0%, rgba(182, 0, 168, 0.12) 40%, transparent 70%)',
-                  borderRadius: '50%',
-                  filter: 'blur(50px)',
-                  pointerEvents: 'none'
-                }} />
-                <img
-                  src={avatarImg}
-                  alt="Jagadeeshwar Sreeram — 3D Avatar"
-                  style={{
-                    width: 'clamp(260px, 32vw, 480px)',
-                    height: 'auto',
-                    objectFit: 'contain',
-                    borderRadius: '24px',
-                    position: 'relative',
-                    zIndex: 1,
-                    filter: 'drop-shadow(0 0 60px rgba(118, 33, 176, 0.35))'
-                  }}
-                />
-              </div>
-            </Magnet>
-          </FadeIn>
-        </div>
+        <FadeIn delay={0.1} y={40}>
+          <div style={{ overflow: 'hidden' }}>
+            <h1
+              className="hero-heading"
+              style={{
+                fontSize: 'clamp(2.8rem, 12vw, 14rem)',
+                fontWeight: 900,
+                textTransform: 'uppercase',
+                letterSpacing: '-0.03em',
+                lineHeight: 0.95,
+                whiteSpace: 'nowrap'
+              }}
+            >
+              JAGADEESHWAR
+            </h1>
+          </div>
+        </FadeIn>
 
-        {/* Text over avatar */}
-        <div style={{ position: 'relative', zIndex: 5 }}>
-          <FadeIn delay={0.1} y={40}>
-            <div style={{ overflow: 'hidden' }}>
-              <h1
-                className="hero-heading"
-                style={{
-                  fontSize: 'clamp(2.8rem, 12vw, 14rem)',
-                  fontWeight: 900,
-                  textTransform: 'uppercase',
-                  letterSpacing: '-0.03em',
-                  lineHeight: 0.95,
-                  whiteSpace: 'nowrap'
-                }}
-              >
-                JAGADEESHWAR
-              </h1>
-            </div>
-          </FadeIn>
-
-          <FadeIn delay={0.25} y={40}>
-            <div style={{ overflow: 'hidden' }}>
-              <h1
-                className="hero-heading"
-                style={{
-                  fontSize: 'clamp(2.8rem, 12vw, 14rem)',
-                  fontWeight: 900,
-                  textTransform: 'uppercase',
-                  letterSpacing: '-0.03em',
-                  lineHeight: 0.95,
-                  whiteSpace: 'nowrap'
-                }}
-              >
-                SREERAM
-              </h1>
-            </div>
-          </FadeIn>
-        </div>
+        <FadeIn delay={0.25} y={40}>
+          <div style={{ overflow: 'hidden' }}>
+            <h1
+              className="hero-heading"
+              style={{
+                fontSize: 'clamp(2.8rem, 12vw, 14rem)',
+                fontWeight: 900,
+                textTransform: 'uppercase',
+                letterSpacing: '-0.03em',
+                lineHeight: 0.95,
+                whiteSpace: 'nowrap'
+              }}
+            >
+              SREERAM
+            </h1>
+          </div>
+        </FadeIn>
 
         <FadeIn delay={0.4} y={20}>
           <p style={{
@@ -267,9 +224,7 @@ const HeroSection = () => {
             fontWeight: 300,
             letterSpacing: '0.1em',
             marginTop: '1.5rem',
-            opacity: 0.8,
-            position: 'relative',
-            zIndex: 5
+            opacity: 0.8
           }}>
             AI Engineer &bull; Computer Vision Researcher &bull; Embedded Systems Developer
           </p>
@@ -277,7 +232,7 @@ const HeroSection = () => {
 
         {/* Social Icons row below subtitle */}
         <FadeIn delay={0.5} y={15}>
-          <div style={{ ...socialBarStyle, marginTop: '1.8rem', position: 'relative', zIndex: 5 }}>
+          <div style={{ ...socialBarStyle, marginTop: '1.8rem' }}>
             <a href="https://wa.me/919000846214" target="_blank" rel="noreferrer" style={socialIconStyle} title="WhatsApp">
               <WhatsAppIcon size={18} />
             </a>
