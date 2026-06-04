@@ -115,10 +115,7 @@ const ContactSection = () => {
             <InstagramIcon size={20} />
             <span>Instagram</span>
           </a>
-          <a href="https://x.com/SreeramJagadee1" target="_blank" rel="noreferrer" className="contact-link">
-            <TwitterXIcon size={20} />
-            <span>X (Twitter)</span>
-          </a>
+
           <div className="contact-link" style={{ cursor: 'default' }}>
             <MapPinIcon size={20} />
             <span>Andhra Pradesh, India</span>
@@ -135,15 +132,7 @@ const ContactSection = () => {
               Chat on WhatsApp
             </a>
           </Magnet>
-          <a
-            href="mailto:mywaysrj@gmail.com"
-            className="btn-ghost"
-            onClick={(e) => {
-              e.preventDefault();
-              window.location.href = 'mailto:mywaysrj@gmail.com';
-            }}
-            style={{ position: 'relative', zIndex: 10 }}
-          >
+          <a href="mailto:mywaysrj@gmail.com" className="btn-ghost" style={{ position: 'relative', zIndex: 10 }}>
             Send Email
           </a>
         </div>
