@@ -254,13 +254,13 @@ const HeroSection = () => {
       {/* Bottom bar */}
       <div style={{
         display: 'flex',
-        justifyContent: 'flex-start',
+        justifyContent: 'space-between',
         alignItems: 'flex-end',
         padding: '0 2.5rem 2.5rem 2.5rem',
         position: 'relative',
         zIndex: 2,
         flexWrap: 'wrap',
-        gap: '3rem'
+        gap: '1rem'
       }}>
         <FadeIn delay={0.55} y={20}>
           <p style={{
