@@ -95,7 +95,7 @@ const ContactSection = () => {
             <WhatsAppIcon size={20} />
             <span>WhatsApp</span>
           </a>
-          <a href="mailto:mywaysrj@gmail.com" className="contact-link">
+          <a href="https://mail.google.com/mail/?view=cm&fs=1&to=mywaysrj@gmail.com" target="_blank" rel="noreferrer" className="contact-link">
             <Mail size={20} />
             <span>mywaysrj@gmail.com</span>
           </a>
@@ -132,7 +132,7 @@ const ContactSection = () => {
               Chat on WhatsApp
             </a>
           </Magnet>
-          <a href="mailto:mywaysrj@gmail.com" className="btn-ghost" style={{ position: 'relative', zIndex: 10 }}>
+          <a href="https://mail.google.com/mail/?view=cm&fs=1&to=mywaysrj@gmail.com" target="_blank" rel="noreferrer" className="btn-ghost" style={{ position: 'relative', zIndex: 10 }}>
             Send Email
           </a>
         </div>
