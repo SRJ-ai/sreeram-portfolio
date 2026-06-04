@@ -278,12 +278,37 @@ const HeroSection = () => {
         </FadeIn>
 
         <FadeIn delay={0.65} y={20}>
-          <div style={{ display: 'flex', gap: '1rem', flexWrap: 'wrap' }}>
+          <div style={{ display: 'flex', gap: '1rem', flexWrap: 'wrap', alignItems: 'center' }}>
             <Magnet padding={80} strength={4}>
               <a href="#projects" className="btn-contact">View Projects</a>
             </Magnet>
             <Magnet padding={80} strength={4}>
               <a href={resumePdf} download="S_JAGADEESHWAR_AI_ML.pdf" className="btn-ghost">Download Resume</a>
+            </Magnet>
+            <Magnet padding={80} strength={4}>
+              <a 
+                href="https://wa.me/919000846214" 
+                target="_blank" 
+                rel="noreferrer" 
+                style={{
+                  display: 'flex',
+                  alignItems: 'center',
+                  justifyContent: 'center',
+                  width: '52px',
+                  height: '52px',
+                  borderRadius: '50%',
+                  background: '#25D366',
+                  color: 'white',
+                  textDecoration: 'none',
+                  boxShadow: '0 4px 15px rgba(37, 211, 102, 0.4)',
+                  transition: 'all 0.3s ease'
+                }}
+                onMouseOver={(e) => { e.currentTarget.style.transform = 'scale(1.1)'; e.currentTarget.style.boxShadow = '0 6px 20px rgba(37, 211, 102, 0.6)'; }}
+                onMouseOut={(e) => { e.currentTarget.style.transform = 'scale(1)'; e.currentTarget.style.boxShadow = '0 4px 15px rgba(37, 211, 102, 0.4)'; }}
+                title="Chat on WhatsApp"
+              >
+                <WhatsAppIcon size={24} />
+              </a>
             </Magnet>
           </div>
         </FadeIn>

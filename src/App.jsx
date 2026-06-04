@@ -6,7 +6,6 @@ import ServicesSection from './components/ServicesSection';
 import ProjectsSection from './components/ProjectsSection';
 import SkillsSection from './components/SkillsSection';
 import ContactSection from './components/ContactSection';
-import WhatsAppFab from './components/WhatsAppFab';
 import './index.css';
 
 function App() {
@@ -19,7 +18,6 @@ function App() {
       <ProjectsSection />
       <SkillsSection />
       <ContactSection />
-      <WhatsAppFab />
     </div>
   );
 }
