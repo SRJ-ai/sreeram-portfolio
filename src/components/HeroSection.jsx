@@ -5,6 +5,7 @@ import { Points, PointMaterial } from '@react-three/drei';
 import * as THREE from 'three';
 import FadeIn from './FadeIn';
 import Magnet from './Magnet';
+import resumePdf from '../assets/S_JAGADEESHWAR_AI_ML.pdf';
 
 /* ===== Inline Social Icons ===== */
 const GithubIcon = ({ size = 20 }) => (
@@ -282,7 +283,7 @@ const HeroSection = () => {
               <a href="#projects" className="btn-contact">View Projects</a>
             </Magnet>
             <Magnet padding={80} strength={4}>
-              <a href="/resume.pdf" download className="btn-ghost">Download Resume</a>
+              <a href={resumePdf} download="S_JAGADEESHWAR_AI_ML.pdf" className="btn-ghost">Download Resume</a>
             </Magnet>
           </div>
         </FadeIn>
