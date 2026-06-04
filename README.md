@@ -1,16 +1,70 @@
-# React + Vite
+<div align="center">
+  <img src="https://raw.githubusercontent.com/SRJ-ai/sreeram-portfolio/master/public/avatar.png" width="120" alt="Avatar" style="border-radius: 50%;" />
+  <h1>Jagadeeshwar Sreeram | AI & Computer Vision Portfolio</h1>
+  
+  <p>
+    <strong>Building intelligent systems at the intersection of AI, Computer Vision, IoT & Embedded Engineering.</strong>
+  </p>
+  
+  <p>
+    <a href="https://srj-ai.github.io/sreeram-portfolio/">View Live Portfolio</a> •
+    <a href="https://linkedin.com/in/jagadeeshwar-sreeram">LinkedIn</a> •
+    <a href="mailto:mywaysrj@gmail.com">Contact</a>
+  </p>
+</div>
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+---
 
-Currently, two official plugins are available:
+## 🌟 Overview
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+This repository contains the source code for my interactive portfolio website. Designed to be a highly premium, modern, and engaging web experience, it highlights my work in **Artificial Intelligence, Medical Imaging, IoT, and Edge Computing**.
 
-## React Compiler
+The interface features an immersive 3D interactive background, magnetic cursor physics, micro-animations, and a sleek dark-mode glassmorphism aesthetic.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## 🚀 Technologies Used
 
-## Expanding the ESLint configuration
+The portfolio is built using a modern, highly performant tech stack:
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- **Frontend Framework**: React + Vite
+- **3D Graphics & Rendering**: Three.js, React Three Fiber (R3F), Drei
+- **Animations**: Framer Motion (for layout animations and scroll reveals)
+- **Styling**: Pure custom CSS with dynamic CSS variables, glassmorphism, and responsive clamping
+- **Deployment**: GitHub Pages (via automated GitHub Actions CI/CD)
+
+## 🛠️ Local Development
+
+To run this project locally, follow these steps:
+
+1. **Clone the repository**
+   ```bash
+   git clone https://github.com/SRJ-ai/sreeram-portfolio.git
+   cd sreeram-portfolio
+   ```
+
+2. **Install dependencies**
+   ```bash
+   npm install
+   ```
+
+3. **Start the development server**
+   ```bash
+   npm run dev
+   ```
+
+4. **Build for production**
+   ```bash
+   npm run build
+   ```
+
+## 🧠 About Me
+
+I am an engineering student and researcher focused on solving complex problems with AI. My key focus areas include:
+- **Medical Image Analysis** (Developing diagnostic aids using deep learning)
+- **Computer Vision** (Real-time tracking, classification, and edge deployment)
+- **Embedded Systems & IoT** (Building smart hardware with ESP32, STM32, and Raspberry Pi)
+
+---
+
+<div align="center">
+  <i>Designed and built with ❤️ by Jagadeeshwar Sreeram</i>
+</div>

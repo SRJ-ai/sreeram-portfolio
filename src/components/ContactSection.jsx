@@ -118,7 +118,7 @@ const ContactSection = () => {
 
           <div className="contact-link" style={{ cursor: 'default' }}>
             <MapPinIcon size={20} />
-            <span>Andhra Pradesh, India</span>
+            <span>Hyderabad, India</span>
           </div>
         </div>
       </FadeIn>
